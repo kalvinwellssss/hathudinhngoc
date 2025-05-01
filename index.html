@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>Anh yêu vợ nào nhất?</h1>
+    <button onclick="rightAnswer()">A. Mai</button>
+    <button onclick="wrongAnswer()">B. Thư</button>
+    <button onclick="wrongAnswer()">C. Thảo</button>
+    <button onclick="wrongAnswer()">D. Hà</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function rightAnswer() {
+      window.location.href = "page2.html";
+    }
+    function wrongAnswer() {
+      document.getElementById("result").innerHTML = '<img src="dog.png" alt="dog" class="image" />';
+    }
+  </script>
+</body>
+</html>
